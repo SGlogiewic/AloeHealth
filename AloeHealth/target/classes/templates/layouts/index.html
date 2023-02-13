@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xlmns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="layouts/defaultTemplate">
+<head>
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+	border: 3px #ccc;
+}
+
+input[type=text], input[type=password]{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+button {
+	background-color: #04AA6D;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	border-radius: 3px;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+}
+
+img.avatar {
+	max-width: 250px;
+}
+
+.container {
+	padding: 16px;
+}
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
+.fieldError {
+	color: red;
+}
+</style>
+</head>
+
+
+
+<body>
+<div layout:fragment="content">
+	<div class="imgcontainer">
+		<img th:src="@{/img/avatar.png}" alt="Avatar" class="avatar"/>
+	</div>
+	<div class="container">
+		<h1>Medical Procedures Site</h1>
+		<br>
+		<h4>Welcome to the Home Page!!</h4>
+		<br>
+		<p>This website will help the community be able to search up medical procedures, its part of the hospital department (i.e. Neurologist or Cardiologist), its risk of success and failure, the average price, an example photo, and schedule a date of surgery.
+	</div>
+</div>
+</body>
+</html>
