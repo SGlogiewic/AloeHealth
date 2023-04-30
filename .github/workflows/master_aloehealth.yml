@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'AloeHealth'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A2038F527E5346AD956F6FB8465D1921 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4FBD41AACA1940029718BD1CC3156C71 }}
           package: '*.jar'
